@@ -3,6 +3,10 @@
 This repository contains code and data for testing Citizens Broadband Radio Service Devices (CBSDs) 
 and their operation with the Spectrum Access System (SAS).
 
+## New Test Cases added from WINNF-TS-4004
+
+https://winnf.memberclicks.net/assets/CBRS/WINNF-TS-4004.pdf
+
 ## Code Prerequisites
 
 * Python 2.7 (https://www.python.org/download/releases/2.7/)
