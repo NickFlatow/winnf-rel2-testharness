@@ -1,0 +1,27 @@
+{
+    "name":"MES_heartbeat_GrantedState_MeasConf",  
+	"questions":
+		[
+		],  
+	"heartbeatRequest": 
+			[ 
+			{
+    			"operationState": "GRANTED"
+  			}
+  			],
+	"response":
+     		{ 
+    		"heartbeatResponse":
+    			[ 
+    			{
+    				"measReportConfig" : ["RECEIVED_POWER_WITH_GRANT"],
+    				"response" : {
+      					"responseCode" : 0
+    					}
+  				}
+	
+		 ]
+	}
+
+	     
+}

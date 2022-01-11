@@ -1,0 +1,31 @@
+{
+    "name":"HBT_heartbeat_AuthState_FCE_Trigger",  
+    "questions":
+		[
+			{
+				"question" : "Did the CBSD1 transmit power prior to AUTHORIZED state (first successful HBT response)?",
+				"answers" : ["y", "n"], 
+				"expectedAnswer" : "n"
+			}			
+		],          
+	"heartbeatRequest": 
+			[ 
+			{
+    			"operationState" : "AUTHORIZED"
+  			}
+  			],
+	"response":
+     		{ 
+    		"heartbeatResponse":
+    			[ 
+    			{
+					"featureCapabilityExchangeTrigger": true,
+    				"response" : {
+      					"responseCode" : 0
+    					}
+  				}
+		 ]
+	}
+
+	     
+}

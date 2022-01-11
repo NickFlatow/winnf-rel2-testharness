@@ -1,0 +1,27 @@
+{
+    "name":"HBT_heartbeat_Auth_Repeats",
+    "repeatsAllowed":"True",      
+    "questions":
+			[
+			],
+
+	"heartbeatRequest": 
+			[ 
+			{
+    			"operationState": "AUTHORIZED"
+  			}
+  			],
+	"response":
+     		{ 
+    		"heartbeatResponse":
+    			[ 
+    			{
+    				"response" : {
+      					"responseCode" : 0
+    					}
+  				}
+		 ]
+	}
+
+	     
+}

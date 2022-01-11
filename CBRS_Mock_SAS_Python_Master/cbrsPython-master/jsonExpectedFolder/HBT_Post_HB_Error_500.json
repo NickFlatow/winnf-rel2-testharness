@@ -1,0 +1,64 @@
+{
+    "name":"HBT_Post_HB_Error_500",	
+    "message":{},
+    "questions":[
+            {
+               "question" : "Did the CBSD  stop RF transmission within 60 seconds of receiving Heartbeat response with responseCode = 500?",
+               "answers" : ["y", "n"], 
+			   "expectedAnswer" : "y"
+             }						
+			 ],
+	"registrationRequest":[ 
+			{ 
+
+  		}
+		],
+	"spectrumInquiryRequest":[ 
+			{ 
+
+  		}
+		],			    
+	"grantRequest":[ 
+			{ 
+
+  		}
+		],
+	"relinquishmentRequest":
+		[ 
+			{ 
+			}
+		], 
+	"deregistrationRequest":[ 
+			{ 
+
+  		}
+		],
+	"response":
+        {
+          "registrationResponse":[ 
+		   		{
+		   			"response" : {"responseCode" : 200}
+		    	}
+		   		],
+		   "spectrumInquiryResponse":[ 
+				{ 
+                 	"response":{"responseCode":0}
+				}
+				],		
+		   "grantResponse":[ 
+		   		{
+		   			"response" : {"responseCode" : 400}
+		    	}
+		   		],
+		   "relinquishmentResponse":[ 
+				{ 
+                 	"response":{"responseCode":0}
+				}
+				],
+			"deregistrationResponse":[ 
+				{ 
+                 	"response":{"responseCode":0}
+				}
+				]								   
+   		}
+}

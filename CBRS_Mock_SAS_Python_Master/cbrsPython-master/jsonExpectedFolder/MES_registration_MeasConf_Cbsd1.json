@@ -1,0 +1,24 @@
+{
+    "name":"MES_registration_MeasConf_Cbsd1",
+    "xmlFilelLinked": "cbsdc1",
+	"questions":
+		[
+		],  
+    "registrationRequest":[
+				{
+
+                    }
+                 ],
+    
+    "response":{
+                 "registrationResponse" :[
+                      {
+    				    "measReportConfig" : ["RECEIVED_POWER_WITHOUT_GRANT"],                         
+                        "response": {
+                               "responseCode": 0
+                               }
+                       }
+                                     
+                   ]
+	          }
+}

@@ -1,0 +1,23 @@
+{
+    "name":"HBT_registration_Cbsd2",
+     "xmlFilelLinked": "cbsdc2",
+	"questions":
+		[
+		],  
+
+	"registrationRequest":[
+				{
+
+                }
+                ],
+     "response":{
+                 "registrationResponse" :[
+						{
+                         "cbsdId": "None",
+                         "response": {
+                         "responseCode": 0
+                        }
+                 }
+               ]
+		}
+}

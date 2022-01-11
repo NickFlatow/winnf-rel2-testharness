@@ -1,0 +1,23 @@
+{
+    "name":"MES_grant_measConf_withoutGrant",	
+	"questions":
+		[
+		],  
+
+	"grantRequest":
+		[ 
+        {
+
+        }        
+		], 
+	"response":
+        { 
+		   "grantResponse":
+		   [ 
+		   	{
+    		"measReportConfig" : ["RECEIVED_POWER_WITHOUT_GRANT"],  		   	
+		   	"response" : {"responseCode" : 0}
+		    }
+		   ]
+   }
+}

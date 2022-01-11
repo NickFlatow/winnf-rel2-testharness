@@ -1,0 +1,13 @@
+{
+    "name":"powerMeas_spectrumInquiry", 
+	"questions":
+		[
+		],  
+    "response":{
+		  "spectrumInquiryResponse":[ 
+      			{      
+		       "response":{"responseCode":0}
+				}	
+				]	  											   			
+	     }
+}

@@ -1,0 +1,22 @@
+{
+    "name":"rel_In_Case_Of_Deregistration",  
+    "questions":
+		[
+		],
+	"relinquishmentRequest":
+	[
+		{
+		}
+	],
+	"response":
+	{	
+		"relinquishmentResponse":
+		[
+			{
+				"response": {
+					"responseCode": 0
+				}				
+			}
+		]
+	}	
+}

@@ -1,0 +1,26 @@
+{
+    "name":"GRA_Error_400_Cbsd",	
+		"questions":
+			[
+				{
+					"question" : "Were there RF transmissions from the CBSD1 during the test?",
+                    "answers" : ["y", "n"], 
+					"expectedAnswer" : "n"
+				}
+			],		
+		"grantRequest":
+		[ 
+        {
+
+        }        
+		], 
+		"response":
+        { 
+		   "grantResponse":
+		   [ 
+		   	{
+		   	"response" : {"responseCode" : 400}
+		    }
+		   ]
+   }
+}

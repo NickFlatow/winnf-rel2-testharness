@@ -1,0 +1,31 @@
+{
+    "name":"MES_spectrumInquiry_MeasRep_Cbsd",  
+	"questions":
+		[
+		],  
+    "measReportRequested" : "True",      
+    "spectrumInquiryRequest": 
+		  [
+		      {
+    			"measReport": {
+    			     "rcvdPowerMeasReports": [
+                       {
+                          "measBandwidth": "${range:1To10000000}",
+                          "measRcvdPower":  "${range:-100To-25}",
+                          "measFrequency": "${range:3550000000To3699999999}"
+                       }
+                       ]
+                   }		          
+		      }
+		  ],
+   "response":
+		   {
+			"spectrumInquiryResponse":[ 
+			{
+		    "response" : {
+		      	"responseCode" : 0
+		         }
+		   }  
+           ]
+    }
+}

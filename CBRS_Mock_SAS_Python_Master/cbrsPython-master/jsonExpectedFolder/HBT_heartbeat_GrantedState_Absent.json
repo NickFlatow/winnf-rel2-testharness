@@ -1,0 +1,32 @@
+{
+    "name":"HBT_heartbeat_GrantedState_Absent", 
+    "isAbsentResponse": "True", 
+    "questions":
+		[
+			{
+				"question" : "Were there RF transmissions from the CBSD during the test?",
+				"answers" : ["y", "n"], 
+				"expectedAnswer" : "n"
+			}
+		],              
+		"heartbeatRequest": 
+			[ 
+			{
+    			"operationState": "GRANTED"
+  			}
+  			],
+	"response":
+     		{ 
+    		"heartbeatResponse":
+    			[ 
+    			{
+    				"response" : {
+      					"responseCode" : 501
+    					}
+  				}
+	
+		 ]
+	}
+
+	     
+}

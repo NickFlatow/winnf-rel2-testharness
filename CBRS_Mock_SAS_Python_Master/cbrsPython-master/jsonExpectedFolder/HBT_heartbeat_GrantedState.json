@@ -1,0 +1,27 @@
+{
+    "name":"HBT_heartbeat_GrantedState",  
+	"questions":
+		[
+		],  
+	
+	"heartbeatRequest": 
+			[ 
+			{
+    			"operationState": "GRANTED"
+  			}
+  			],
+	"response":
+     		{ 
+    		"heartbeatResponse":
+    			[ 
+    			{
+    				"response" : {
+      					"responseCode" : 0
+    					}
+  				}
+	
+		 ]
+	}
+
+	     
+}

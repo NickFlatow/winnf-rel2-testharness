@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<cbrsParams>
+	<jsonsRepoPath>jsonExpectedFolder</jsonsRepoPath>
+	<testRepoPath>/home/ubuntu/SAS_test_harness/Citizens-Broadband-Radio-Service-Device/CBRS_Mock_SAS_Python_Master/cbrsPython-master/testFiles</testRepoPath>
+	<hostIp>192.168.4.25</hostIp>
+	<port>5000</port>
+	<heartbeatLimit>30</heartbeatLimit>
+	<pemFilePath>/home/ubuntu/SAS_test_harness/Citizens-Broadband-Radio-Service-Device/CBRS_Mock_SAS_Python_Master/cbrsPython-master/certificates/Certificate_2022/sasharnesscert.pem</pemFilePath>
+	<keyFilePath>/home/ubuntu/SAS_test_harness/Citizens-Broadband-Radio-Service-Device/CBRS_Mock_SAS_Python_Master/cbrsPython-master/certificates/Certificate_2022/sasharnesspriv.key</keyFilePath>
+	<caCerts>/home/ubuntu/SAS_test_harness/Citizens-Broadband-Radio-Service-Device/CBRS_Mock_SAS_Python_Master/cbrsPython-master/certificates/Certificate_2022/sascacert.pem</caCerts>
+	<cpiCert>/home/ubuntu/SAS_test_harness/Citizens-Broadband-Radio-Service-Device/CBRS_Mock_SAS_Python_Master/cbrsPython-master/certificates/Certificate_2021/cpi_certificate.pem</cpiCert>
+</cbrsParams>	

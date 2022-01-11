@@ -1,0 +1,13 @@
+{
+    "name":"powerMeas_grant",
+ 	"questions":
+		[
+		],  
+   "response":{
+          "grantResponse":[ 
+		   			{
+		   			"response" : {"responseCode" : 0}
+		    		}
+		   			]			  											   			
+	          }
+}

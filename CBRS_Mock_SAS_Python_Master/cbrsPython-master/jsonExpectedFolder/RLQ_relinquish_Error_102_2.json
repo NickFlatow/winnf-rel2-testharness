@@ -1,0 +1,31 @@
+{
+    "name":"RLQ_relinquish_Error_102_2",
+    "questions":
+			[
+				{
+                    "question" : "Did CBSD2 cease RF transmission before receipt of Relinquishment Request by Test Harness?",
+                    "answers" : ["y", "n"], 
+					"expectedAnswer" : "y"
+				}					
+			],			      
+        
+		"relinquishmentRequest": 
+			[ 
+			{
+    		}
+  			],
+	"response":
+     		{ 
+    		"relinquishmentResponse":
+    			[ 
+    			{
+    				"response" : {
+      					"responseCode" : 102,
+      					"responseData" : ["grantId"]
+    					}
+  				}
+		 ]
+	}
+
+	     
+}

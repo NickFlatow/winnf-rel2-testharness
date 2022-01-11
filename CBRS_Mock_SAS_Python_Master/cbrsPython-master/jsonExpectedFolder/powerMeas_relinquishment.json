@@ -1,0 +1,13 @@
+{
+    "name":"powerMeas_relinquishment",    
+	"questions":
+		[
+		],  
+    "response":{
+		   "relinquishmentResponse":[ 
+					{ 
+                    "response":{"responseCode":0}
+					}
+					]				  											   			
+	          }
+}

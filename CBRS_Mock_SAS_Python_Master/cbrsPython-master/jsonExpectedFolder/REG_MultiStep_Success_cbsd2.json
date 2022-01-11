@@ -1,0 +1,30 @@
+{
+    "name":"REG_MultiStep_Success_cbsd2",
+	"xmlFilelLinked": "cbsdc2",
+    "questions":
+				[
+ 					{
+						"question" : "Were there RF transmissions from the CBSD2 during the test?", 
+						"answers" : ["y", "n"],  
+						"expectedAnswer" : "n"
+ 					}
+				],
+			"registrationRequest":
+        	[
+            	{
+ 				  "userId":"${maximumLength:128}", 
+ 				  "fccId":"${maximumLength:128}"  
+				}
+			],
+			"response":{
+			"registrationResponse" : 
+				[
+					{
+					  "response": {
+						 "responseCode": 0
+					  }
+					}
+				]  
+				}
+	
+}

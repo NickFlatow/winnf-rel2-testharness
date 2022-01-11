@@ -1,0 +1,22 @@
+{
+    "name":"HBT_grant_shortGrantExpiry",	
+    "shorterGrantTime" : "True",
+    "questions":
+			[
+			],
+		"grantRequest":
+		[ 
+        {
+
+        }        
+		], 
+	"response":
+        { 
+		   "grantResponse":
+		   [ 
+		   	{
+		   	"response" : {"responseCode" : 0}
+		    }
+		   ]
+   }
+}

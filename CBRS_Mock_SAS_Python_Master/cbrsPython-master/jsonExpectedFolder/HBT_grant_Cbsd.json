@@ -1,0 +1,21 @@
+{
+    "name":"HBT_grant_Cbsd",	
+    "questions":
+			[
+			],
+		"grantRequest":
+		[ 
+        {
+
+        }        
+		], 
+	"response":
+        { 
+		   "grantResponse":
+		   [ 
+		   	{
+		   	"response" : {"responseCode" : 0}
+		    }
+		   ]
+   }
+}

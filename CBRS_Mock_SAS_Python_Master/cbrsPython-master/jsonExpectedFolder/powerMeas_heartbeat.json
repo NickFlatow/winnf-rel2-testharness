@@ -1,0 +1,15 @@
+{
+    "name":"powerMeas_heartbeat",   
+	"questions":
+		[
+		],  
+    "response":{
+    	  "heartbeatResponse":[ 
+    				{
+    				"response" : {
+      					"responseCode" : 0
+    					}
+  					}
+  					]			  											   			
+	          }
+}

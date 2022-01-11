@@ -1,0 +1,13 @@
+{
+    "name":"powerMeas_deregistration",   
+	"questions":
+		[
+		],  
+    "response":{
+				"deregistrationResponse":[
+					{
+					"response": {"responseCode": 0}				
+					}
+				    ]					  											   			
+	          }
+}

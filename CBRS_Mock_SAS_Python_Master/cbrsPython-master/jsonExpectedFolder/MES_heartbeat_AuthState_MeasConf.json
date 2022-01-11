@@ -1,0 +1,28 @@
+{
+    "name":"MES_heartbeat_AuthState_MeasConf",  
+	"questions":
+		[
+		],  
+
+	"heartbeatRequest": 
+			[ 
+			{
+    			"operationState": "AUTHORIZED"
+  			}
+  			],
+	"response":
+     		{ 
+    		"heartbeatResponse":
+    			[ 
+    			{
+    				"measReportConfig" : ["RECEIVED_POWER_WITH_GRANT"],
+    				"response" : {
+      					"responseCode" : 0
+    					}
+  				}
+	
+		 ]
+	}
+
+	     
+}

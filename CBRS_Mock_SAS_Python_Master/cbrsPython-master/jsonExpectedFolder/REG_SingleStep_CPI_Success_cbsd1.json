@@ -1,0 +1,41 @@
+{
+    "name":"REG_SingleStep_CPI_Success_cbsd1",
+	"xmlFilelLinked": "cbsdc1",
+    "questions":
+				[
+ 					{
+						"question" : "Were there RF transmissions from the CBSD1 during the test?", 
+						"answers" : ["y", "n"],  
+						"expectedAnswer" : "n"
+ 					}
+				],
+			"registrationRequest":
+        	[
+            	{
+ 				  "userId":"${maximumLength:128}", 
+ 				  "fccId":"${maximumLength:128}",  
+				  "measCapability":{"$or":[["RECEIVED_POWER_WITHOUT_GRANT"],["RECEIVED_POWER_WITH_GRANT"],["RECEIVED_POWER_WITHOUT_GRANT","RECEIVED_POWER_WITH_GRANT"],["RECEIVED_POWER_WITH_GRANT","RECEIVED_POWER_WITHOUT_GRANT"] ]},
+				  "cpiSignatureData":
+						{	
+							"protectedHeader":"${maximumLength:128}"
+							,"encodedCpiSignedData":"${maximumLength:1024}"
+							,"digitalSignature":"${maximumLength:1024}"
+						},
+				  "cbsdCategory":{"$or":["A","B"]},
+				  "airInterface":
+					{
+						"radioTechnology":{"$or":["E_UTRA","CAMBIUM_NETWORKS"]}
+						}
+				}
+			],
+			"response":{
+			"registrationResponse": 
+				[
+					{
+					  "response": {
+						 "responseCode": 0
+					  }
+					}
+				]  
+				}
+}

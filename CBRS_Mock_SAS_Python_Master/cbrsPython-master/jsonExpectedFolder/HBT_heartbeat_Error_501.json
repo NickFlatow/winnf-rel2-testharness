@@ -1,0 +1,30 @@
+{
+    "name":"HBT_heartbeat_Error_501",
+    "questions":
+			[
+                {
+                    "question" : "Did the CBSD stop RF transmission within 60 seconds of receiving Heartbeat response with responseCode = 501?",
+                    "answers" : ["y", "n"], 
+					"expectedAnswer" : "y"
+                }						
+			],			           
+	"heartbeatRequest": 
+			[ 
+			{
+    			"operationState" : "AUTHORIZED"
+  			}
+  			],
+	"response":
+     		{ 
+    		"heartbeatResponse":
+    			[ 
+    			{
+    				"response" : {
+      					"responseCode" : 501
+    					}
+  				}
+		 ]
+	}
+
+	     
+}

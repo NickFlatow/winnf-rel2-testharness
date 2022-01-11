@@ -1,0 +1,29 @@
+{
+    "name":"REG_Error_102_cbsd1",
+	"xmlFilelLinked": "cbsdc1",
+    "questions":
+				[
+ 					{
+						"question" : "Were there RF transmissions from the CBSD1 during the test?", 
+						"answers" : ["y", "n"],  
+						"expectedAnswer" : "n"
+ 					}
+				],
+			"registrationRequest":
+        	[
+            	{
+ 				  "userId":"${maximumLength:128}", 
+ 				  "fccId":"${maximumLength:128}"  
+				}
+			],
+			"response":{
+			"registrationResponse" : 
+				[
+					{
+					  "response": {
+						 "responseCode": 102
+					  }
+					}
+				]  
+				}
+}

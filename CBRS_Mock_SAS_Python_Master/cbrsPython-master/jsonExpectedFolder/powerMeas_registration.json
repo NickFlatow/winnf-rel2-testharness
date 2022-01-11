@@ -1,0 +1,16 @@
+{
+    "name":"powerMeas_registration", 
+	"questions":
+		[
+		],  
+    "response":{
+         "registrationResponse" :[
+                     {
+                        "cbsdId": "None",
+                        "response": {
+                               "responseCode": 0
+                               }
+                       }                                   
+                   ]			  											   			
+	          }
+}
