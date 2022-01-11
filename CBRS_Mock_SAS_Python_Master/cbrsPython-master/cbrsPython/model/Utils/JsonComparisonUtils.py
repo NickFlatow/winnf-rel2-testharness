@@ -271,7 +271,10 @@ def validate_Json_Value_Special_Sign(expected,actual):
             return strAcutal
         raise Exception ("the actual value : " + strAcutal + " is more then the limit length  : " +  lenExpected )
 
-
+    if("list" in strExpected):
+        if isinstance(actual,list):
+            return strAcutal
+        raise Exception ("the actual value : " + strAcutal + " is not of type list ")
         
 from collections import OrderedDict
 
