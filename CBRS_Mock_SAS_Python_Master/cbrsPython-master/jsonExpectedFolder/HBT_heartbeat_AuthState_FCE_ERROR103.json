@@ -1,0 +1,30 @@
+{
+    "name":"HBT_heartbeat_AuthState_FCE_",  
+    "questions":
+		[
+			{
+				"question" : "Did the CBSD1 transmit power prior to AUTHORIZED state (first successful HBT response)?",
+				"answers" : ["y", "n"], 
+				"expectedAnswer" : "n"
+			}			
+		],          
+	"featureCapabilityExchangeRequest": 
+			[ 
+			{
+				"cbsdFeatureCapabilityList":"{$list}"
+  			}
+  			],
+	"response":
+     		{ 
+    		"featureCapabilityExchangeResponse":
+    			[ 
+    			{
+    				"response" : {
+      					"responseCode" : 103
+    					}
+  				}
+		 ]
+	}
+
+	     
+}
