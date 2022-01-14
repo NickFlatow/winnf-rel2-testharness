@@ -69,7 +69,6 @@ class CBRSRequestHandler(object):
         self.set_Current_Json_Steps(testDefinition, EnviormentConfFile, dirPath)         
         self.transmitExpireTime                 = ''
         self.grantExpireTime                    = ''
-        self.sasFeatureCapabilityList           = ["WF_ENH_GROUP_HANDLING"]
     
     def set_Current_Json_Steps(self,testDefinition,confFile,dirPath):
         cbsdFoundInJsons = False
@@ -336,9 +335,6 @@ class CBRSRequestHandler(object):
             if (typeOfCalling == consts.GRANT_SUFFIX_HTTP) or (typeOfCalling == consts.HEART_BEAT_SUFFIX_HTTP):
                 self.expectingMeasReportInSubsequentHbt = True
                 self.measReportCounter = 0
-        
-        if 'cbsdFeatureCapabilityList' in httpRequest:
-            specificRespJson['sasFeatureCapabilityList'] = self.sasFeatureCapabilityList
 
         if(typeOfCalling == consts.SPECTRUM_INQUIERY_SUFFIX_HTTP):
             self.change_Value_Of_Param_In_Dict(specificRespJson,"cbsdId",self.cbsdId)
@@ -386,6 +382,10 @@ class CBRSRequestHandler(object):
             if self.transmitExpireTime > self.grantExpireTime:
                 self.transmitExpireTime = self.grantExpireTime
                 self.change_Value_Of_Param_In_Dict(specificRespJson, "transmitExpireTime", self.transmitExpireTime)
+        
+        elif(typeOfCalling == consts.FCE_SUFFIX_HTTP):
+            pass
+
         elif(typeOfCalling == consts.REGISTRATION_SUFFIX_HTTP):
             if specificRespJson['response']['responseCode'] == 0:
                 if(self.cbsdId==None):
@@ -394,6 +394,13 @@ class CBRSRequestHandler(object):
                 self.change_Value_Of_Param_In_Dict(specificRespJson, "cbsdId", self.cbsdId)
             elif 'cbsdId' in specificRespJson:
                 del specificRespJson['cbsdId']
+            if 'sasFeatureCapabilityList' in specificRespJson:
+                self.change_Value_Of_Param_In_Dict(specificRespJson, "sasFeatureCapabilityList", httpRequest['cbsdFeatureCapabilityList'])
+            if 'sasFeatureCapabilityListPartialMatch' in specificRespJson:
+                tmp = httpRequest['cbsdFeatureCapabilityList']
+                tmp.append('FII_SAS_Feature')
+                del specificRespJson['sasFeatureCapabilityListPartialMatch']
+                self.change_Value_Of_Param_In_Dict(specificRespJson, "sasFeatureCapabilityList", tmp)
                   
         elif(typeOfCalling == consts.DEREGISTRATION_SUFFIX_HTTP):
             if specificRespJson['response']['responseCode'] == 102 or specificRespJson['response']['responseCode'] == 103:
