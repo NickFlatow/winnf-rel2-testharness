@@ -20,7 +20,7 @@
                  "registrationResponse" :[
                       {
                         "cbsdId": "None",
-                        "sasFeatureCapabilityList": "None",
+                        "sasFeatureCapabilityListPartialMatch": "None",
                         "response": {
                                "responseCode": 0
                                }
