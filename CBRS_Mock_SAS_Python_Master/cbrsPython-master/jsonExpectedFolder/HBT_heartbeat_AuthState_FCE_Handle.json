@@ -19,6 +19,7 @@
     		"featureCapabilityExchangeResponse":
     			[ 
     			{
+				    "sasFeatureCapabilityListPartialMatch": "None",
     				"response" : {
       					"responseCode" : 0
     					}
