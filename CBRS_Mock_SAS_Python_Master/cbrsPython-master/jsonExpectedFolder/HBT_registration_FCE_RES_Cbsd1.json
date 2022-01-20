@@ -1,10 +1,10 @@
 {
-    "name":"HBT_registration_Cbsd1",
+    "name":"HBT_registration_FCE_RES_Cbsd1",
     "xmlFilelLinked": "cbsdc1",
 	"questions":
 		[
             {
-                "question" : "Questions",
+                "question" : "Are you afriad to fail?",
                 "answers" : ["y", "n"], 
                 "expectedAnswer" : "y"
              }	
@@ -12,16 +12,19 @@
 
 		"registrationRequest":[
 				{
-
+                    "cbsdFeatureCapabilityList":"{$list}"
                 }
-                 ],
+                ],
     
     "response":{
                  "registrationResponse" :[
                       {
                         "cbsdId": "None",
+                        "sasFeatureCapabilityList": "None",
                         "response": {
-                               "responseCode": 0
+                               "responseCode": 0,
+                               "responseData": ["GENERAL","PARAM_WARNING","FID_WARNING"],
+                               "responseMessage": "Additional Information from SAS Test Harness"
                                }
                        }
                                      

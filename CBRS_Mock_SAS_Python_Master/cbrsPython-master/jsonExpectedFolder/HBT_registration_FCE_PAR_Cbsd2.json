@@ -1,25 +1,21 @@
 {
-    "name":"HBT_registration_Cbsd1",
-    "xmlFilelLinked": "cbsdc1",
+    "name":"HBT_registration_FCE_Cbsd1",
+    "xmlFilelLinked": "cbsdc2",
 	"questions":
 		[
-            {
-                "question" : "Questions",
-                "answers" : ["y", "n"], 
-                "expectedAnswer" : "y"
-             }	
 		],  
 
 		"registrationRequest":[
 				{
-
+                    "cbsdFeatureCapabilityList":"{$list}"
                 }
-                 ],
-    
+                ],
+                
     "response":{
                  "registrationResponse" :[
                       {
                         "cbsdId": "None",
+                        "sasFeatureCapabilityListPartialMatch": "None",
                         "response": {
                                "responseCode": 0
                                }

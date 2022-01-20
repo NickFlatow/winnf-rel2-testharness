@@ -1,0 +1,31 @@
+{
+    "name":"HBT_heartbeat_Auth_Absent",
+    "isAbsentResponse": "True",       
+    "questions":
+		[
+			{
+				"question" : "Did the CBSD stop RF transmissions within (transmitExpireTime + 60seconds) of last valid heartbeat response?",
+				"answers" : ["y", "n"], 
+				"expectedAnswer" : "y"
+			}
+		],     
+	"heartbeatRequest": 
+			[ 
+			{
+    			"operationState" : "AUTHORIZED"
+  			}
+  			],
+	"response":
+     		{ 
+    		"heartbeatResponse":
+    			[ 
+    			{
+    				"response" : {
+      					"responseCode" : 106
+    					}
+  				}
+		 ]
+	}
+
+	     
+}

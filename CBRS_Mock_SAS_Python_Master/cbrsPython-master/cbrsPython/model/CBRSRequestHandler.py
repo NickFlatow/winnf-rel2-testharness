@@ -161,7 +161,8 @@ class CBRSRequestHandler(object):
             self.expectedRelBeforeDeragistration =  self.verify_If_Rel_Before_Deregistration_Expected()
             
         if(typeOfCalling == consts.DEREGISTRATION_SUFFIX_HTTP):
-            self.numberOfStep = (len(self.jsonSteps)-1)             
+            pass
+            # self.numberOfStep = (len(self.jsonSteps)-1)             
             
         if(self.repeatsType == typeOfCalling and self.repeatesAllowed == True and self.oldHttpReq == req):
             ### in case its an heartbeat calling need to check if it is cross the limit 
@@ -195,10 +196,6 @@ class CBRSRequestHandler(object):
                 self.grantBeforeHeartBeat = True
                 self.numberOfHearbeatRequests=0
 
-            # if(typeOfCalling==consts.FCE_SUFFIX_HTTP):
-            #     self.grantBeforeHeartBeat = True
-                    
-            #first registration for HBT tests
             elif(typeOfCalling!=consts.HEART_BEAT_SUFFIX_HTTP):
                 self.grantBeforeHeartBeat = False
                 self.validDurationTime = 0
@@ -337,6 +334,9 @@ class CBRSRequestHandler(object):
             tmp.append('FII_SAS_Feature')
             del specificRespJson['sasFeatureCapabilityListPartialMatch']
             self.change_Value_Of_Param_In_Dict(specificRespJson, "sasFeatureCapabilityList", tmp)
+        if 'sasFeatureCapabilityListEmpty' in specificRespJson:
+            del specificRespJson['sasFeatureCapabilityListEmpty']
+            self.change_Value_Of_Param_In_Dict(specificRespJson, "sasFeatureCapabilityList", [])
         
         if 'measReportConfig' in specificRespJson:
             self.loggerHandler.print_to_Logs_Files('Response message contains measReportConfig', True)

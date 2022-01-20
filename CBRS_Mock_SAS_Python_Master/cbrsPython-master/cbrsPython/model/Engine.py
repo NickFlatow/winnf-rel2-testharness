@@ -28,7 +28,7 @@ class MyEngine(object):
         self.cbrsObjArray                       = []
         self.allTheCBRSRegistered               = False
 
-    def process_request(self,httpRequest,typeOfCalling):
+    def process_request(self,httpRequest,typeOfCalling): 
         '''
         the method get the httpRequest and for each request sent it to the correct cbsd request handler
         '''
@@ -51,7 +51,7 @@ class MyEngine(object):
                     self.validationErrorAccuredInEngine = True
                     return E.message
                 try:
-                    if(i==0):
+                    if(i==0): 
                         response = self.handle_Http_Req(httpReq["cbsdSerialNumber"],httpReq,typeOfCalling, request_arrival_time)
                         self.raise_In_Case_Of_An_Error(response)
                     elif (i>0):

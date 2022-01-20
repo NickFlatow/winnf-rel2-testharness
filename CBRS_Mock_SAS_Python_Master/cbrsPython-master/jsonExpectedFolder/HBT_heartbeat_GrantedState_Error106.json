@@ -1,0 +1,32 @@
+{
+    "name":"HBT_heartbeat_GrantedState_Error501",  
+	"questions":
+		[
+			{
+				"question" : "Did the CBSD stsart RF transmissions?",
+				"answers" : ["y", "n"], 
+				"expectedAnswer" : "n"
+			}
+		],  
+
+	"heartbeatRequest": 
+			[ 
+			{
+    			"operationState": "GRANTED"
+  			}
+  			],
+	"response":
+     		{ 
+    		"heartbeatResponse":
+    			[ 
+    			{
+    				"response" : {
+      					"responseCode" : 106
+    					}
+  				}
+	
+		 ]
+	}
+
+	     
+}

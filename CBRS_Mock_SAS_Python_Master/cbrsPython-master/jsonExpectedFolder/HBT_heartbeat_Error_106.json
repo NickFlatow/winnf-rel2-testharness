@@ -1,0 +1,30 @@
+{
+    "name":"HBT_heartbeat_Error_106",
+    "questions":
+		[
+			{
+				"question" : "Did the CBSD stop RF transmissionExpireTime + 60 seconds of receiving Heartbeat response with responseCode = 106?",
+				"answers" : ["y", "n"], 
+				"expectedAnswer" : "y"
+			}						
+		],			      
+       
+		"heartbeatRequest": 
+			[ 
+				{
+					"operationState" : "AUTHORIZED"
+				}
+  			],
+	"response":
+	{ 
+		"heartbeatResponse":
+			[ 
+				{
+					"response" : 
+						{
+							"responseCode" : 106
+						}
+				}
+			]
+	} 
+}
