@@ -144,5 +144,5 @@ confFile= minidom.parse(os.path.join(str(dirPath),'Configuration', 'conf.xml'))
 
 loggerHandler = loggerObserver(dirPath)
 initialize_Reports()
-run_New_Test(dirPath, confFile, loggerHandler) 
+run_New_Test(dirPath, confFile, loggerHandler)
 

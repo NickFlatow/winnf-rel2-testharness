@@ -130,6 +130,7 @@ class CBRSRequestHandler(object):
                     self.validationErrorAccuredInEngine = True  
                     raise IOError (str(e))   
 
+
         if(typeOfCalling==consts.HEART_BEAT_SUFFIX_HTTP): 
 
             if(self.lastHeartBeatTime != None):
@@ -196,11 +197,17 @@ class CBRSRequestHandler(object):
                 self.grantBeforeHeartBeat = True
                 self.numberOfHearbeatRequests=0
 
+            elif(typeOfCalling==consts.FCE_SUFFIX_HTTP): 
+                #keep sanity of heartbeats while we do the FCE exchange
+                self.grantBeforeHeartBeat = True
+                self.secondLastHeartBeatTime=self.lastHeartBeatTime
+                self.lastHeartBeatTime = current_time 
+
             elif(typeOfCalling!=consts.HEART_BEAT_SUFFIX_HTTP):
                 self.grantBeforeHeartBeat = False
                 self.validDurationTime = 0
                 self.numberOfHearbeatRequests=0
-                
+            
             elif(typeOfCalling==consts.HEART_BEAT_SUFFIX_HTTP):
                 ### checks that heartbeat request has been sent only after grant or another heartbeat
                 if(not self.grantBeforeHeartBeat):

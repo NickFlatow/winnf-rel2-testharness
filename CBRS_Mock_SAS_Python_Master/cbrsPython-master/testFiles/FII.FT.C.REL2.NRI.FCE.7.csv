@@ -1,7 +1,8 @@
 jsonFileName
 HBT_registration_FCE_Cbsd1.json
 HBT_spectrumInquiry_Cbsd.json
-HBT_grant_Cbsd.json
+HBT_grant_FCE_Trigger_Cbsd.json
+FCE_Trigger_Handle.json
 HBT_heartbeat_GrantedState.json
 HBT_heartbeat_AuthState.json
 HBT_heartbeat_AuthState_FCE_Trigger.json

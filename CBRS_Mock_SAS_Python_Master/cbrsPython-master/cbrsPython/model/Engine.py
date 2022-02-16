@@ -257,6 +257,16 @@ class MyEngine(object):
                                 }
                             } ]
                        }
+        elif callType == 'featureCapabilityExchange':
+            rsp = { 'featureCapabilityExchangeResponse': [ {
+                            'cbsdId': req['cbsdId'],
+                            'response': {
+                                'responseCode': 102,
+                                'responseData': ['cbsdFeatureCapabilityList','from canned']
+                                }
+                            } ]
+                       }
+
         else:   # unknown callType -- should never get here...
             rsp ={ 'unknownMessageResponse': ['response not defined']}
             

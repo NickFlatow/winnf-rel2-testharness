@@ -1,5 +1,5 @@
 {
-    "name":"HBT_heartbeat_AuthState_FCE_",  
+    "name":"FCE_Triiger_Handle",  
     "questions":
 		[
 			{
@@ -19,13 +19,11 @@
     		"featureCapabilityExchangeResponse":
     			[ 
     			{
+				    "sasFeatureCapabilityListPartialMatch": "None",
     				"response" : {
-      					"responseCode" : 102,
-						"responseData" : ["cbsdFeatureCapabilityList"]
+      					"responseCode" : 0
     					}
   				}
 		 ]
-	}
-
-	     
+	}     
 }

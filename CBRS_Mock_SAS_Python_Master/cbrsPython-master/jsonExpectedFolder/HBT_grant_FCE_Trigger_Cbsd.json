@@ -1,0 +1,22 @@
+{
+    "name":"HBT_grant_Cbsd",	
+    "questions":
+			[
+			],
+		"grantRequest":
+		[ 
+        {
+
+        }        
+		], 
+	"response":
+        { 
+		   "grantResponse":
+		   [ 
+		   	{
+			"featureCapabilityExchangeTrigger": true,
+		   	"response" : {"responseCode" : 0}
+		    }
+		   ]
+   }
+}
