@@ -1,16 +1,26 @@
 {
     "name":"HBT_registration_FCE_Cbsd1",
     "xmlFilelLinked": "cbsdc1",
-    "registrationRequest":[
+	"questions":
+		[
             {
-                "cbsdFeatureCapabilityList":"{$list}"
-            }
-            ],
+                "question" : "Are you afriad to fail?",
+                "answers" : ["y", "n"], 
+                "expectedAnswer" : "y"
+             }	
+		],  
+
+		"registrationRequest":[
+				{
+                    "cbsdFeatureCapabilityList":"{$list}"
+                }
+                ],
+    
     "response":{
                  "registrationResponse" :[
                       {
                         "cbsdId": "None",
-                        "sasFeatureCapabilityListEmpty": "None",
+                        "sasFeatureCapabilityList": [],
                         "response": {
                                "responseCode": 0
                                }

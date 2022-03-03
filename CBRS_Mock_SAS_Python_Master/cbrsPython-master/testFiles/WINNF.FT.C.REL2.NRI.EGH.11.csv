@@ -1,13 +1,12 @@
 jsonFileName
-HBT_registration_FCE_NONE_Cbsd1.json
-DRG_Success.json
-HBT_registration_Cbsd1.json
-HBT_spectrumInquiry_Cbsd.json
+HBT_registration_FCE_PAR_Cbsd1.json
+HBT_spectrumInquiry_Group_Cbsd.json
 HBT_grant_Cbsd.json
 HBT_heartbeat_GrantedState.json
 HBT_heartbeat_AuthState.json
+HBT_heartbeat_AuthState_Group_fail.json
 HBT_heartbeat_AuthState.json
 HBT_heartbeat_AuthState.json
 HBT_heartbeat_AuthState.json
 HBT_heartbeat_AuthState.json
-HBT_heartbeat_AuthState_freqQuestion.json
+CFE_heartbeat_AuthState_freqQuestion.json

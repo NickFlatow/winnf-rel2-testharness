@@ -15,13 +15,13 @@
   			}
   			],
 	"response":
-     		{
+     		{ 
     		"featureCapabilityExchangeResponse":
     			[ 
     			{
     				"response" : {
-      					"responseCode" : 103,
-						"responseData" : ["cbsdId"]
+      					"responseCode" : 102,
+						"responseData" : ["cbsdFeatureCapabilityList"]
     					}
   				}
 		 ]

@@ -275,6 +275,10 @@ def validate_Json_Value_Special_Sign(expected,actual):
         if isinstance(actual,list):
             return strAcutal
         raise Exception ("the actual value : " + strAcutal + " is not of type list ")
+    if("jsonObj" in strExpected):
+        if isinstance(actual,str):
+            return strAcutal
+        raise Exception ("the actual value : " + strAcutal + " is not of type jsonObj ")
         
 from collections import OrderedDict
 

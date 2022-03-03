@@ -1,0 +1,55 @@
+{
+    "name":"HBT_heartbeat_AuthState",  
+    "questions":
+		[
+			{
+				"question" : "Did the CBSD1 transmit power prior to AUTHORIZED state (first successful HBT response)?",
+				"answers" : ["y", "n"], 
+				"expectedAnswer" : "n"
+			}			
+		],          
+	"heartbeatRequest": 
+			[{
+    			"operationState" : "AUTHORIZED"
+  			}],
+	"response":
+	{ 
+		"heartbeatResponse":
+		[{
+			"groupingConfig":
+			[{
+				"groupType": "CBRS_ALLIANCE",
+				"groupId"  : "COEXISTENCE_GROUP",
+				"supportedBySas": true,
+				"groupConfigInfo":
+				{ 
+					"cbrsAllianceConfig":
+					{
+						"cbrsaVersion": "v4.0",
+						"eutraTddConfig":
+						{
+							"ulDlConfig": 5,
+							"ssfConfig": 2
+						},
+						"nrTddConfig":
+						{
+							"subcarrierSpacing":"kHz30",
+							"nrTddUlDlPattern1":
+							{
+								"dlUlTransmissionPeriodicity":"ms4",
+								"nrofDownlinkSlots": 10,
+								"nrofDownlinkSymbols": 11,
+								"nrofUplinkSlots": 12,
+								"nrofUplinkSymbols":13
+							}
+						}
+					}
+				}
+			}],
+			"response" : 
+			{
+				"responseCode" : 0
+			}
+		}]
+	}	     
+}
